@@ -1,5 +1,5 @@
 # Joker-VGDTSA (Video Game Design; Washington TSA)
- <sub>Note: 'Joker' is the developer/code name for this project.</sub>\
+ <sub>Note: 'Joker' is the developer/code name for this project. A finalized name will come soon.</sub>\
  A game created for 2023 TSA Video Game Design
 
 # Controls

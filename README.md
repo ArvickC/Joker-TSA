@@ -6,9 +6,10 @@
 
 ## Player 1
 #### Movement
-W = Jump\
-D = Move Right/Forward\
-A = Move Left/Backward
+W = Move Up\
+D = Move Right\
+A = Move Left\
+S = Move Down
 <!-- S = Crouch -->
 #### Interaction
 E = Interact\
@@ -16,9 +17,11 @@ Q = Alternate Interact
 
 ## Player 2
 #### Movement
-Arrow Key Up = Jump\
-Arrow Key Right = Move Right/Forward\
-Arrow Key Left = Move Left/Backward
+Arrow Key Up = Move Up\
+Arrow Key Right = Move Right\
+Arrow Key Left = Move Left\
+Arrow Key Down = Move Down
 <!-- Arrow Key Down = Crouch -->
 #### Interaction
-Currently Unknown
+Right Shift = Interact\
+Right Control = Alternate Interact

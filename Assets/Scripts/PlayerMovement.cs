@@ -4,13 +4,12 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public CharacterController2D controller;
     public bool player1 = true;
     public float moveSpeed = 30f;
     public Transform spawn;
 
-    private float move = 0f;
-    private bool isJump = false;
+    private float hMove = 0f;
+    private float vMove = 0f;
 
     private void Start() {
         // Move player to spawn
@@ -19,23 +18,17 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update() {
         if(player1) { // Player 1
-            move = Input.GetAxisRaw("Horizontal1") * moveSpeed;
-            if(Input.GetButtonDown("Jump1")) {
-                isJump = true;
-            }
+            hMove = Input.GetAxisRaw("Horizontal1") * moveSpeed;
+            vMove = Input.GetAxisRaw("Vertical1") * moveSpeed;
         }
         else { // Player 2
-            move = Input.GetAxisRaw("Horizontal2") * moveSpeed;
-            if(Input.GetButtonDown("Jump2")) {
-                isJump = true;
-            }
+            hMove = Input.GetAxisRaw("Horizontal2") * moveSpeed;
+            vMove = Input.GetAxisRaw("Vertical2") * moveSpeed;
         }
-
     }
 
     private void FixedUpdate() {
         // Move player
-        controller.Move(move * Time.fixedDeltaTime, false, isJump);
-        isJump = false;
+        gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(hMove, vMove);
     }
 }

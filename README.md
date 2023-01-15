@@ -25,3 +25,7 @@ Arrow Key Down = Move Down
 #### Interaction
 Right Shift = Interact\
 Right Control = Alternate Interact
+
+# Mechanics
+## Button
+When interacted with, stays on for a certain amount of time then turns off.

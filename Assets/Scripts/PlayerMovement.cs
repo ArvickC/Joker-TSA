@@ -31,4 +31,8 @@ public class PlayerMovement : MonoBehaviour
         // Move player
         gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(hMove, vMove);
     }
+
+    public bool getIsPlayer1() {
+        return player1;
+    }
 }

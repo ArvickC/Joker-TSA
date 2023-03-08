@@ -14,6 +14,9 @@ S = Move Down
 #### Interaction
 E = Interact\
 Q = Alternate Interact
+### Options
+R = Restart Level\
+ESC = Quit
 
 ## Player 2
 #### Movement

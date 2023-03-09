@@ -42,7 +42,7 @@ public class Level5 : MonoBehaviour
             if(!p6.getState()) d2.toggleState(false);
         }
 
-        if(p4.getState()) {
+        if(p4.getState() || p5.getState()) {
             d4.enabled = false;
         } else {
             d4.enabled = true;
@@ -64,7 +64,7 @@ public class Level5 : MonoBehaviour
             if(!p3.getState()) d2.toggleState(false);
         }
 
-        if(p4.getState() && p5.getState() && p6.getState()) {
+        if(p4.getState() && p1.getState() && p6.getState()) {
             exit.toggele(true);
         }
     }

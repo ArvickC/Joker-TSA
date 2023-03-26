@@ -1,4 +1,4 @@
-# Joker-VGDTSA (Video Game Design; Washington TSA)
+# An Open Deck (Video Game Design; Washington TSA)
  <sub>Note: 'Joker' is the developer/code name for this project. A finalized name will come soon.</sub>\
  A game created for 2023 TSA Video Game Design
 
@@ -32,3 +32,13 @@ Right Control = Alternate Interact
 # Mechanics
 ## Button
 When interacted with, stays on for a certain amount of time then turns off.
+## Lever
+When interacted with, toggles on. After another interaction, it toggles off.
+## Pressure Plate
+When stood on, by either a box or a player, turns on. Otherwise, it turns off.
+## Box
+A moveable object by the player
+## Laser
+A laser that can be moved/reflected by mirrors. When touching the reciever block, the output turns on. If the laser hits another object, it stops.
+## Mirror
+A box that can reflect lasers.
